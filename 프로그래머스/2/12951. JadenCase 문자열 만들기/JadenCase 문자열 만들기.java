@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public String solution(String s) {
         
-       String[] strArr = s.split(" ", -1);
+       String[] strArr = s.split(" ",-1);
         
         StringBuilder result = new StringBuilder();
               
