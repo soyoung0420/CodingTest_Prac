@@ -55,15 +55,11 @@ class Solution {
                         break;
                 }
 
-                if (tempX < 0 || tempX >= park.length || tempY < 0 || tempY >= park[0].length()){
+                if (tempX < 0 || tempX >= park.length || tempY < 0 || tempY >= park[0].length() ||park[tempX].charAt(tempY) == 'X'){
                     isBlocked = true;
                     break;
                 }
 
-                if (park[tempX].charAt(tempY) == 'X') {
-                    isBlocked = true;
-                    break;
-                }
             }
 
             if (!isBlocked) {
